@@ -2259,3 +2259,5 @@ for (let i = 0; i < input.length; i++) {
 elves.sort((a, b) => {return a - b}); // Why is this such a hassle in javascript
 
 console.log('Biggest amount:', elves.at(-1))
+
+console.log('Total of top 3 elves:', elves.at(-1) + elves.at(-2) + elves.at(-3))
