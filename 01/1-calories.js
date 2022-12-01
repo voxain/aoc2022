@@ -1,26 +1,11 @@
 // Find the elf that is carrying the most calories.
 
-let input =
-`1000
-2000
-3000
+let input = require('fs').readFileSync('./01/input.txt', 'ascii');
 
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000`;
-
-input = input.split('\n');
+input = input.split('\r\n');
 
 let elf = 0; // Elf selector
 let elves = []; // Array of all elve's total weights
-let winner = 0; // Elf with the most weight
 
 for (let i = 0; i < input.length; i++) {
     if (input[i] == '') elf++; // If newline, switch to next elf
